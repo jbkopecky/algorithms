@@ -8,7 +8,7 @@ implementation in python.
 
 1. String & Array
 ---
-* Rotate Array
+  [x] [Rotate Array](http://www.programcreek.com/2015/03/rotate-array-in-java/)
 
    > - `intermediate_array`:  Space: O(n) Time: O(n) 
    > - `bubble_rotate`: Space: O(1) Time: O(n*k)
