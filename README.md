@@ -2,7 +2,7 @@ _Top 10 Algorithms for Coding Interview_ in Python :snake:
 ===
 
    * [Top 10 Algorithms for Coding
-   Interview](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-   interview/)
+   Interview](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 implementation in python.
   
 
@@ -12,6 +12,7 @@ implementation in python.
 
    > - `intermediate_array`:  Space: O(n) Time: O(n) 
    > - `bubble_rotate`: Space: O(1) Time: O(n*k)
+   > - `rotate`: Space: O(1) Time: O(n)
 
 2. Matrix
 ---

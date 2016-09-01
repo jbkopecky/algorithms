@@ -1,16 +1,18 @@
 import time
 
+
 # Solution 1 - Intermediate Array
 def intermediate_array(n, k):
     arr = range(n)
-    if k>len(arr):
-        k = k%len(arr)
+    if k>n:
+        k = k%n
     result = []
     for i in range(k):
         result.append(arr[n-k+i])
     for j in range(n-k):
         result.append(arr[j])
     return result
+
 
 # Solution 2 - Bubble Rotate
 def bubble_rotate(n, k):
@@ -23,18 +25,47 @@ def bubble_rotate(n, k):
     return arr
 
 
-if __name__ == "__main__":
+# Solution 3 - Reversal
+def reverse(arr, left, right):
+    if len(arr) == 0 or len(arr) == 1:
+        return arr
+    while left < right:
+        temp = arr[left]
+        arr[left] = arr[right]
+        arr[right] = temp
+        left += 1
+        right -= 1
+    return arr
 
-    N,K = 10, 12
+
+def rotate(n, k):
+    if k > n:
+        k = k%n
+    a = n - k
+    arr = range(n)
+    arr = reverse(arr,0,a-1)
+    arr = reverse(arr,a,n-1)
+    arr = reverse(arr,0,n-1)
+    return arr
+
+
+if __name__ == "__main__":
+    N,K = 10, 5
 
     # Solution 1:
     t1 = time.time()
     ia = intermediate_array(N,K)
     t2 = time.time()
-    print("intermediate_array: %s in %2.4f s" % (ia,t2-t1))
+    print("intermediate_array: %s in %2.5f s" % (ia,t2-t1))
 
     # Solution 2:
     t1 = time.time()
     ia = bubble_rotate(N,K)
     t2 = time.time()
-    print("intermediate_array: %s in %2.4f s" % (ia,t2-t1))
+    print("bubble_rotate: %s in %2.5f s" % (ia,t2-t1))
+
+    # Solution 2:
+    t1 = time.time()
+    ia = rotate(N,K)
+    t2 = time.time()
+    print("rotate: %s in %2.5f s" % (ia,t2-t1))
