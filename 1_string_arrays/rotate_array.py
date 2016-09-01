@@ -3,7 +3,7 @@ import time
 
 # Solution 1 - Intermediate Array
 def intermediate_array(n, k):
-    arr = range(n)
+    arr = list(range(n))
     if k>n:
         k = k%n
     result = []
@@ -16,7 +16,7 @@ def intermediate_array(n, k):
 
 # Solution 2 - Bubble Rotate
 def bubble_rotate(n, k):
-    arr = range(n)
+    arr = list(range(n))
     for i in range(k):
         for j in range(n-1):
             temp = arr[n-1-j]
@@ -42,7 +42,7 @@ def rotate(n, k):
     if k > n:
         k = k%n
     a = n - k
-    arr = range(n)
+    arr = list(range(n))
     arr = reverse(arr,0,a-1)
     arr = reverse(arr,a,n-1)
     arr = reverse(arr,0,n-1)
