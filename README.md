@@ -14,10 +14,10 @@ implementation in python.
     > - `bubble_rotate`: Space: O(1), Time: O(n*k)
     > - `rotate`: Space: O(1), Time: O(n)
 
-  - [ ] [Reverse Words in a
+  - [x] [Reverse Words in a
     String](http://www.programcreek.com/2014/05/leetcode-reverse-words-in-a-string-ii-java/)
     
-    > - 'rotate_words': Space: O(1), Time: O(n)
+    > - `rotate_words`: Space: O(1), Time: O(n)
 
 
 2. Matrix
