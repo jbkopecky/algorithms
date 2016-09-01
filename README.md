@@ -11,7 +11,7 @@ implementation in python.
 * Rotate Array
 
    > - `intermediate_array`:  Space: O(n) Time: O(n) 
-     - `bubble_rotate`: Space: O(1) Time: O(n*k)
+   > - `bubble_rotate`: Space: O(1) Time: O(n*k)
 
 2. Matrix
 ---
