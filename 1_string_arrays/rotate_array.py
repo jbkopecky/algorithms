@@ -1,8 +1,6 @@
-from utils import timeit
-
+import time
 
 # Solution 1 - Intermediate Array
-@timeit
 def intermediate_array(n, k):
     array = range(n)
     if k>len(array):
@@ -15,11 +13,8 @@ def intermediate_array(n, k):
     return result
 
 if __name__ == "__main__":
-    N = 10
-    K = 4
-    ia = intermediate_array(N,K)
-    print(ia)
-
-
-
+    t1 = time.time()
+    ia = intermediate_array(10,4)
+    t2 = time.time()
+    print("intermediate_array: %s in %2.4f s" % (ia,t2-t1))
 
