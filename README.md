@@ -8,11 +8,14 @@ implementation in python.
 
 1. String & Array
 ---
-  [x] [Rotate Array](http://www.programcreek.com/2015/03/rotate-array-in-java/)
+  - [x] [Rotate Array](http://www.programcreek.com/2015/03/rotate-array-in-java/)
 
    > - `intermediate_array`:  Space: O(n) Time: O(n) 
    > - `bubble_rotate`: Space: O(1) Time: O(n*k)
    > - `rotate`: Space: O(1) Time: O(n)
+
+  - [ ] [Reverse Words in a
+    String](http://www.programcreek.com/2014/05/leetcode-reverse-words-in-a-string-ii-java/)
 
 2. Matrix
 ---
