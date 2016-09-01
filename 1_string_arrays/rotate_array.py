@@ -18,7 +18,7 @@ if __name__ == "__main__":
     N = 10
     K = 4
     ia = intermediate_array(N,K)
-    print ia
+    print(ia)
 
 
 
