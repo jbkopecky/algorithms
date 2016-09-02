@@ -19,9 +19,16 @@ implementation in python.
     
     > - `rotate_words`: Space: O(1), Time: O(n)
 
-  - [ ] [Evaluate Reverse Polish Notation
+  - [x] [Evaluate Reverse Polish Notation
     ](http://www.programcreek.com/2012/12/leetcode-evaluate-reverse-polish-notation/)
+
     > - `evaluate_polish`: Space: O(1), Time: O(n)
+
+  - [x] [Isomorphic
+    Strings](http://www.programcreek.com/2014/05/leetcode-isomorphic-strings-java/)
+
+    > - `is_isomorphic`: Time: O(n)
+
 
 
 2. Matrix
