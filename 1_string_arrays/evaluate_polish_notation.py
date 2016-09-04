@@ -1,7 +1,12 @@
 def evaluate_polish(notation):
     out = 0.
     string_operators = "*+-/"
-
+    operators = {
+        '*': lambda x, y: float(x) * float(y),
+        '+': lambda x, y: float(x) + float(y),
+        '-': lambda x, y: float(x) - float(y),
+        '/': lambda x, y: float(x) / float(y),
+    }
     stack = []  # Python lists are also great stacks !
 
     for s in notation:
@@ -10,15 +15,7 @@ def evaluate_polish(notation):
         else:
             b = stack.pop()
             a = stack.pop()
-            if s == "*":
-                stack.append(str(float(a) * float(b)))
-            elif s == "+":
-                stack.append(str(float(a) + float(b)))
-            elif s == "-":
-                stack.append(str(float(a) - float(b)))
-            elif s == "/":
-                stack.append(str(float(a) / float(b)))
-
+            stack.append(str(operators[s](a, b)))
     return float(stack.pop())
 
 
