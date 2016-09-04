@@ -1,5 +1,4 @@
 import urllib2
-import heapq
 
 ALPH = 'abcdefghijklmnopqrstuvwxyz'
 DICT_URL = 'https://svnweb.freebsd.org/csrg/share/dict/words?revision=61569&view=co&pathrev=61569'
